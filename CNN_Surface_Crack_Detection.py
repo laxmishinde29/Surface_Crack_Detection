@@ -17,7 +17,6 @@ from sklearn.metrics import confusion_matrix, classification_report
 # ------------------------------------------------------------
 
 print("=" * 70)
-print("        Marvellous Infosystems")
 print("        Industrial Surface Crack Detection using CNN")
 print("=" * 70)
 
@@ -209,7 +208,7 @@ for i in range(6):
 
     plt.axis("off")
 
-plt.suptitle("Marvellous CNN Sample Training Images")
+plt.suptitle("CNN Sample Training Images")
 plt.show()
 
 
@@ -307,7 +306,7 @@ plt.plot(history.history["accuracy"], label="Training Accuracy")
 plt.plot(history.history["val_accuracy"], label="Validation Accuracy")
 plt.xlabel("Epochs")
 plt.ylabel("Accuracy")
-plt.title("Marvellous CNN Training vs Validation Accuracy")
+plt.title("CNN Training vs Validation Accuracy")
 plt.legend()
 plt.show()
 
@@ -321,7 +320,7 @@ plt.plot(history.history["loss"], label="Training Loss")
 plt.plot(history.history["val_loss"], label="Validation Loss")
 plt.xlabel("Epochs")
 plt.ylabel("Loss")
-plt.title("Marvellous CNN Training vs Validation Loss")
+plt.title("CNN Training vs Validation Loss")
 plt.legend()
 plt.show()
 
@@ -364,7 +363,7 @@ print(classification_report(
 # Step 16: Save Final Model
 # ------------------------------------------------------------
 
-model.save("Final_Marvellous_Crack_Detection_Model.keras")
+model.save("Final_Crack_Detection_Model.keras")
 
 print("Final model saved successfully.")
 
